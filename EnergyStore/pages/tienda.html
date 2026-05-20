@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnergyStore | Inicio</title>
+    <!-- Recursos -->
+    <link rel="icon" type="#" href="#">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- JS -->
+    <script defer src="../js/app.js"></script>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="encabezado__logo">
+            <img class="encabezado__logo__imagen" src="../src/img/logo-web/logo.webp" alt="EnergyStore-Logo">
+        </div>
+
+        <div>
+            <nav class="encabezado__nav">
+                <ul class="encabezado__nav__ul">
+                    <a class="encabezado__nav__ul__a" href="../index.html">Inicio</a>
+                </ul>
+                <ul>
+                    <a class="encabezado__nav__ul__a encabezado__nav__ul__a--activo" href="./tienda.html">Tienda</a>
+                </ul>
+
+                <button id="boton-carrito" class="encabezado__carrito">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+                    <span id="cantidad-carrito" class="encabezado__carrito__cantidad carrito-toggle">0</span>
+                    
+                    <div id="menu-carrito" class="encabezado__carrito__contenedor carrito-toggle">
+                        <div class="encabezado__carrito__descripcion">
+                            <h3>Tu Carrito Esta Vacio</h3>
+                            <p>Agrega Productos</p>
+                        </div>
+
+                        <table class="encabezado__carrito__lista">
+                            <tbody id="lista-carrito">
+                                <!-- Lista Carrito -->
+                            </tbody>
+                        </table>
+
+                        <div class="encabezado__carrito__resumen">
+                            <div>
+                                <p id="resumen-carrito" class="carrito-toggle">Total: $ 0</p>
+                            </div>
+                        </div>
+
+                        <div class="encabezado__carrito__botones">
+                            <div>
+                                <a id="pagar-carrito">Pagar</p>
+                            </div>
+
+                            <div>
+                                <a id="limpiar-carrito">Limpiar</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article id="lista-productos" class="cards contenedor">
+            <!-- Lista -->
+        </article>
+    </main>
+
+    <footer>
+        <p class="footer__autor">Sebastian-Web <span class="footer__autorSpan">Derechos Reservados</span></p>
+    </footer>
+</body>
+</html>

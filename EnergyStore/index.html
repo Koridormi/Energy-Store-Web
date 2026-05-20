@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnergyStore | Inicio</title>
+    <!-- Recursos -->
+    <link rel="icon" type="#" href="#">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Scripts -->
+    <script defer src="./js/app.js"></script>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="encabezado__logo">
+            <img class="encabezado__logo__imagen" src="./src/img/logo-web/logo.webp" alt="EnergyStore-Logo">
+        </div>
+
+        <div>
+            <nav class="encabezado__nav">
+                <ul class="encabezado__nav__ul">
+                    <a class="encabezado__nav__ul__a encabezado__nav__ul__a--activo" href="./index.html">Inicio</a>
+                </ul>
+                <ul>
+                    <a class="encabezado__nav__ul__a" href="./pages/tienda.html">Tienda</a>
+                </ul>
+
+                <button id="boton-carrito" class="encabezado__carrito">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+                    <span id="cantidad-carrito" class="encabezado__carrito__cantidad carrito-toggle">0</span>
+                    
+                    <div id="menu-carrito" class="encabezado__carrito__contenedor carrito-toggle">
+                        <div class="encabezado__carrito__descripcion">
+                            <h3>Tu Carrito Esta Vacio</h3>
+                            <p>Agrega Productos</p>
+                        </div>
+
+                        <table class="encabezado__carrito__lista">
+                            <tbody id="lista-carrito">
+                                <!-- Lista Carrito -->
+                            </tbody>
+                        </table>
+
+                        <div class="encabezado__carrito__resumen">
+                            <div>
+                                <p id="resumen-carrito" class="carrito-toggle">Total: $ 0</p>
+                            </div>
+                        </div>
+
+                        <div class="encabezado__carrito__botones">
+                            <div>
+                                <a id="pagar-carrito">Pagar</p>
+                            </div>
+
+                            <div>
+                                <a id="limpiar-carrito">Limpiar</p>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <section class="presentacion">
+            <h1>Quienes Somos?</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, unde laudantium neque placeat porro sit earum. Vero distinctio neque ipsa delectus nisi magnam id cumque, quidem eum quibusdam necessitatibus tenetur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat velit magni delectus quaerat incidunt nam maxime ea libero, blanditiis quae non eveniet saepe, fuga corrupti id expedita, reiciendis atque earum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, excepturi deserunt. Voluptatum velit omnis doloremque iste! Nobis, asperiores rerum architecto fugiat aliquid voluptatibus? Voluptates deserunt accusantium ipsum quas dolorum ipsam!</p>
+        </section>
+
+        <section class="ventajas">
+            <h2>Ventajas de comprar con nosotors</h2>
+
+                <h3>La mejor calidad</h3>
+                <div class="ventajas__informacion">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-sparkle-highlight"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M14.504 8.522l-1.758 -4.032a.814 .814 0 0 0 -1.492 0l-1.759 4.032c-.19 .436 -.537 .784 -.973 .973l-4.032 1.759a.814 .814 0 0 0 0 1.492l4.033 1.758c.436 .19 .784 .538 .973 .974l1.759 4.033a.814 .814 0 0 0 1.492 0l1.758 -4.033c.19 -.436 .538 -.784 .974 -.974l4.033 -1.758a.814 .814 0 0 0 0 -1.492l-4.033 -1.759a1.88 1.88 0 0 1 -.974 -.973" /><path d="M3 3l2 2" /><path d="M21 3l-2 2" /><path d="M3 21l2 -2" /><path d="M21 21l-2 -2" /></svg>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora suscipit, saepe ullam option.</p>
+                </div>
+
+                <h3>Ofertas de verdad!</h3>
+                <div class="ventajas__informacion">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flame"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 10.941c2.333 -3.308 .167 -7.823 -1 -8.941c0 3.395 -2.235 5.299 -3.667 6.706c-1.43 1.408 -2.333 3.294 -2.333 5.588c0 3.704 3.134 6.706 7 6.706c3.866 0 7 -3.002 7 -6.706c0 -1.712 -1.232 -4.403 -2.333 -5.588c-2.084 3.353 -3.257 3.353 -4.667 2.235" /></svg>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora suscipit, saepe ullam option.</p>
+                </div>
+
+                <h3>Soporte y servicio las 24 horas</h3>
+                <div class="ventajas__informacion">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-sun"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora suscipit, saepe ullam option.</p>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer__autor">Sebastian-Web <span class="footer__autorSpan">Derechos Reservados</span></p>
+    </footer>
+</body>
+</html>

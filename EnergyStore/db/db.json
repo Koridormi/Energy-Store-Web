@@ -1,0 +1,58 @@
+{
+    "bebidasEnergeticas": [
+        {
+            "id": 1,
+            "nombre": "EnergyDrink Original",
+            "precio": 14.99,
+            "imagen": "../src/img/productos/1.png"
+        },
+        {
+            "id": 2,
+            "nombre": "EnergyDrink Frutilla",
+            "precio": 19.99,
+            "imagen": "../src/img/productos/2.png"
+        },
+        {
+            "id": 3,
+            "nombre": "EnergyDrink Mango",
+            "precio": 24.99,
+            "imagen": "../src/img/productos/3.png"
+        },
+        {
+            "id": 4,
+            "nombre": "EnergyDrink Uva",
+            "precio": 17.99,
+            "imagen": "../src/img/productos/4.png"
+        },
+        {
+            "id": 5,
+            "nombre": "EnergyDrink Sandia",
+            "precio": 18.99,
+            "imagen": "../src/img/productos/5.png"
+        },
+        {
+            "id": 6,
+            "nombre": "EnergyDrink Blue Ice",
+            "precio": 27.99,
+            "imagen": "../src/img/productos/6.png"
+        },
+        {
+            "id": 7,
+            "nombre": "EnergyDrink Manzana",
+            "precio": 17.99,
+            "imagen": "../src/img/productos/7.png"
+        },
+        {
+            "id": 8,
+            "nombre": "EnergyDrink Frutos",
+            "precio": 29.99,
+            "imagen": "../src/img/productos/8.png"
+        },
+        {
+            "id": 9,
+            "nombre": "EnergyDrink Maracuya",
+            "precio": 24.99,
+            "imagen": "../src/img/productos/9.png"
+        }
+    ]
+}
