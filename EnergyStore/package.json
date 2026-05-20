@@ -1,0 +1,34 @@
+{
+  "name": "energy-store",
+  "version": "1.0.0",
+  "description": "Proyecto de un e-commerce de bebidas energeticas",
+  "keywords": [
+    "e-commerce",
+    "energydrink",
+    "energy-drink"
+  ],
+  "homepage": "https://github.com/Koridormi/Energy-Store-Web#readme",
+  "bugs": {
+    "url": "https://github.com/Koridormi/Energy-Store-Web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Koridormi/Energy-Store-Web.git"
+  },
+  "license": "ISC",
+  "author": "Koridormi",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.26.24"
+  },
+  "devDependencies": {
+    "vite": "^8.0.13"
+  }
+}

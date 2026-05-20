@@ -1,3 +1,5 @@
+import Swal from 'sweetAlert2';
+
 // variables
 let carrito = [];
 
@@ -84,7 +86,7 @@ function crearCard(producto) {
 };
 
 function obtenerProductos() {
-    const url = '../db/db.json';
+    const url = '/db/db.json';
 
     return fetch(url)
         .then( (respuesta) => {
@@ -171,7 +173,7 @@ function elementosCarrito() {
 
     if(carrito.length === 0) {
         cantidadCarrito.classList.add('carrito-toggle');
-        cantidad.textContent = '0';
+        cantidadCarrito.textContent = '0';
     };
 
     if(cantidad > 0) {
@@ -185,15 +187,15 @@ function elementosCarrito() {
 };
 
 function carritoDescripcion() {
-    const carritoLista = document.querySelector('.encabezado__carrito__lista');
     const carritoMensaje = document.querySelector('.encabezado__carrito__descripcion');
+    const carritoLista = document.querySelector('.encabezado__carrito__lista');
 
     if(listaCarrito.children.length === 0) {
-        carritoLista.classList.add('carrito-toggle');
         carritoMensaje.classList.remove('carrito-toggle');
+        carritoLista.classList.add('carrito-toggle');
     } else {
-        carritoLista.classList.remove('carrito-toggle');
         carritoMensaje.classList.add('carrito-toggle');
+        carritoLista.classList.remove('carrito-toggle');
     };
 };
 
@@ -292,8 +294,24 @@ function vaciarCarrito() {
     if(carrito.length >= 1) {
         carrito = [];
         const storage = localStorage.clear();
+
+        Swal.fire({
+            title: 'Carrito Limpiado Exitosamente',
+            icon: 'success',
+            confirmButtonText: 'Aceptar',
+            customClass: {
+                popup: 'mensaje-dimensiones'
+            }
+        });
     } else if(carrito.length === 0) {
-        alert('Tu Carrito ya esta vacio');
+        Swal.fire({
+            title: 'Tu Carrito Ya Esta Vacio',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            customClass: {
+                popup: 'mensaje-dimensiones'
+            }
+        });
     };
 
     listarCarrito();
@@ -303,11 +321,26 @@ function vaciarCarrito() {
 
 function comprarProductos() {
     if(carrito.length >= 1) {
-        alert('Compra Realizada con Exito!');
         carrito = [];
         const storage = localStorage.clear();
+
+        Swal.fire({
+            title: 'Compra Realizada :)',
+            icon: 'success',
+            confirmButtonText: 'Aceptar',
+            customClass: {
+                popup: 'mensaje-dimensiones'
+            }
+        });
     } else if(carrito.length === 0) {
-        alert('No tienes productos en tu carrito');
+        Swal.fire({
+            title: 'No Tienes Productos En Tu Carrito',
+            icon: 'error',
+            confirmButtonText: 'Aceptar',
+            customClass: {
+                popup: 'mensaje-dimensiones'
+            }
+        });
     };
 
     listarCarrito();

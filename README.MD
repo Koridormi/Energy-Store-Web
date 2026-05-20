@@ -1,8 +1,6 @@
-# //
-//
+# Pagina Web E-Commerce
+Se utilizo: HTML, CSS, JavaScript, Librerias de JS: SweetAlert2
 ======================
 ![Imagen](media/1.png)
 ======================
-![Imagen](media/2.png)
-======================
-Test: //
+Test: https://energy-store-project.netlify.app/
