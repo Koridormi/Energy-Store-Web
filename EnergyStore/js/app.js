@@ -296,7 +296,7 @@ function vaciarCarrito() {
         const storage = localStorage.clear();
 
         Swal.fire({
-            title: 'Carrito Limpiado Exitosamente',
+            title: 'Carrito Limpiado',
             icon: 'success',
             confirmButtonText: 'Aceptar',
             customClass: {
@@ -305,7 +305,7 @@ function vaciarCarrito() {
         });
     } else if(carrito.length === 0) {
         Swal.fire({
-            title: 'Tu Carrito Ya Esta Vacio',
+            title: 'Tu Carrito Ya Esta Limpio',
             icon: 'error',
             confirmButtonText: 'Aceptar',
             customClass: {
@@ -334,7 +334,7 @@ function comprarProductos() {
         });
     } else if(carrito.length === 0) {
         Swal.fire({
-            title: 'No Tienes Productos En Tu Carrito',
+            title: 'Tu Carrito Esta Vacio',
             icon: 'error',
             confirmButtonText: 'Aceptar',
             customClass: {
