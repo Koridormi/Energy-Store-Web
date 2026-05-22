@@ -1,4 +1,4 @@
-import Swal from 'sweetAlert2';
+import Swal from 'sweetalert2';
 
 // variables
 let carrito = [];
@@ -155,7 +155,7 @@ function listarCarrito() {
 };
 
 function cargarProductos() {
-    const storage = JSON.parse(localStorage.getItem('productos'));
+    const storage = JSON.parse(localStorage.getItem('productos')) || [];
     
     if(storage) {
         carrito = storage;
@@ -293,7 +293,7 @@ function eliminarProducto(e) {
 function vaciarCarrito() {
     if(carrito.length >= 1) {
         carrito = [];
-        const storage = localStorage.clear();
+        const storage = localStorage.removeItem('productos');
 
         Swal.fire({
             title: 'Carrito Limpiado',
@@ -322,7 +322,7 @@ function vaciarCarrito() {
 function comprarProductos() {
     if(carrito.length >= 1) {
         carrito = [];
-        const storage = localStorage.clear();
+        const storage = localStorage.removeItem('productos');
 
         Swal.fire({
             title: 'Compra Realizada :)',
