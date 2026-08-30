@@ -65,7 +65,7 @@ function crearCard(producto) {
         productoNombre.textContent = producto.nombre;
 
         const productoDescripcion = document.createElement('P');
-        productoDescripcion.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia et, rerum voluptates itaque aut suscipit.';
+        productoDescripcion.textContent = producto.descripcion;
 
         const productoPrecio = document.createElement('P');
         productoPrecio.textContent = `$ ${producto.precio}`;

@@ -4,55 +4,64 @@
             "id": 1,
             "nombre": "EnergyDrink Original",
             "precio": 14.99,
-            "imagen": "/img/productos/1.png"
+            "descripcion": "El sabor clásico: directo, equilibrado y listo para cualquier momento del día.",
+            "imagen": "/img/productos/energy-drink-original.png"
         },
         {
             "id": 2,
             "nombre": "EnergyDrink Frutilla",
             "precio": 19.99,
-            "imagen": "/img/productos/2.png"
+            "descripcion": "Frutilla intensa con un perfil dulce y fresco que no pasa desapercibido.",
+            "imagen": "/img/productos/energy-drink-frutilla.png"
         },
         {
             "id": 3,
             "nombre": "EnergyDrink Mango",
             "precio": 24.99,
-            "imagen": "/img/productos/3.png"
+            "descripcion": "Mango tropical, jugoso y vibrante para sumar energía con carácter.",
+            "imagen": "/img/productos/energy-drink-mango.png"
         },
         {
             "id": 4,
             "nombre": "EnergyDrink Uva",
             "precio": 17.99,
-            "imagen": "/img/productos/4.png"
+            "descripcion": "Un toque profundo de uva con final frutal y una personalidad marcada.",
+            "imagen": "/img/productos/energy-drink-uva.png"
         },
         {
             "id": 5,
             "nombre": "EnergyDrink Sandia",
             "precio": 18.99,
-            "imagen": "/img/productos/5.png"
+            "descripcion": "Sandía refrescante y ligera, ideal para los días que piden algo distinto.",
+            "imagen": "/img/productos/energy-drink-sandia.png"
         },
         {
             "id": 6,
             "nombre": "EnergyDrink Blue Ice",
             "precio": 27.99,
-            "imagen": "/img/productos/6.png"
+            "descripcion": "Una mezcla fría y audaz, pensada para quienes buscan máxima frescura.",
+            "imagen": "/img/productos/energy-drink-blue-ice.png"
         },
         {
             "id": 7,
             "nombre": "EnergyDrink Manzana",
             "precio": 17.99,
-            "imagen": "/img/productos/7.png"
+            "descripcion": "Manzana verde, ácida y crujiente, con el equilibrio justo de dulzor.",
+            "imagen": "/img/productos/energy-drink-manzana.png"
         },
         {
             "id": 8,
             "nombre": "EnergyDrink Frutos",
             "precio": 29.99,
-            "imagen": "/img/productos/8.png"
+            "descripcion": "Una combinación de frutos rojos con notas dulces y un final potente.",
+            "imagen": "/img/productos/energy-drink-frutos-rojos.png"
         },
         {
             "id": 9,
             "nombre": "EnergyDrink Maracuya",
             "precio": 24.99,
-            "imagen": "/img/productos/9.png"
+            "descripcion": "Maracuyá tropical con un perfil cítrico que despierta desde el primer sorbo.",
+            "imagen": "/img/productos/energy-drink-maracuya.png"
         }
     ]
 }

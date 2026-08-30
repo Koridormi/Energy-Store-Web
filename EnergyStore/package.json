@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/Koridormi/Energy-Store-Web.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "Koridormi",
   "type": "module",
   "main": "index.js",
