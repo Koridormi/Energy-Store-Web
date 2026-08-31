@@ -7,6 +7,8 @@ let carrito = [];
 const listaProductos = document.querySelector('#lista-productos');
 const botonCarrito = document.querySelector('#boton-carrito');
 const menuCarrito = document.querySelector('#menu-carrito');
+const fondoCarrito = document.querySelector('#fondo-carrito');
+const cerrarCarrito = document.querySelector('#cerrar-carrito');
 const cantidadCarrito = document.querySelector('#cantidad-carrito');
 const listaCarrito = document.querySelector('#lista-carrito');
 const resumenCarrito = document.querySelector('#resumen-carrito');
@@ -22,8 +24,13 @@ botonCarrito.addEventListener('click', carritoToggle);
 
 document.addEventListener('click', carritoHide);
 
-menuCarrito.addEventListener('click', (e) => {
-    e.stopPropagation();
+document.addEventListener('keydown', carritoHideTeclado);
+
+fondoCarrito.addEventListener('click', ocultarCarrito);
+
+cerrarCarrito.addEventListener('click', () => {
+    ocultarCarrito();
+    botonCarrito.focus();
 });
 
 document.body.addEventListener('click', botonAgregar);
@@ -37,19 +44,42 @@ pagarCarrito.addEventListener('click', comprarProductos);
 // functions
 function carritoToggle(e) {
     e.preventDefault();
+    e.stopPropagation();
 
-    menuCarrito.classList.toggle('carrito-toggle');
+    const abrirCarrito = menuCarrito.classList.contains('carrito-toggle');
+
+    actualizarEstadoCarrito(abrirCarrito);
 };
 
 function carritoHide(e) {
-
     const clickBoton = botonCarrito.contains(e.target);
+    const clickMenu = menuCarrito.contains(e.target);
 
-    if(!menuCarrito.classList.contains('carrito-toggle') && !clickBoton) {
-        menuCarrito.classList.add('carrito-toggle');
+    if(!menuCarrito.classList.contains('carrito-toggle') && !clickBoton && !clickMenu) {
+        ocultarCarrito();
     };
 
     carritoDescripcion();
+};
+
+function carritoHideTeclado(e) {
+    if(e.key === 'Escape' && !menuCarrito.classList.contains('carrito-toggle')) {
+        ocultarCarrito();
+        botonCarrito.focus();
+    };
+};
+
+function actualizarEstadoCarrito(abierto) {
+    menuCarrito.classList.toggle('carrito-toggle', !abierto);
+    fondoCarrito.classList.toggle('carrito-toggle', !abierto);
+    menuCarrito.setAttribute('aria-hidden', String(!abierto));
+    botonCarrito.setAttribute('aria-expanded', String(abierto));
+    botonCarrito.setAttribute('aria-label', abierto ? 'Cerrar carrito' : 'Abrir carrito');
+    document.body.classList.toggle('carrito-abierto', abierto);
+};
+
+function ocultarCarrito() {
+    actualizarEstadoCarrito(false);
 };
 
 function crearCard(producto) {
@@ -242,6 +272,7 @@ function productoDuplicado(productoEncontrado) {
 
     listarCarrito();
     calcularTotal();
+    carritoDescripcion();
 };
 
 function calcularTotal() {

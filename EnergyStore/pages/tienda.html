@@ -29,39 +29,39 @@
                     <a class="encabezado__nav__ul__a encabezado__nav__ul__a--activo" href="/pages/tienda.html">Tienda</a>
                 </ul>
 
-                <button id="boton-carrito" class="encabezado__carrito">
+                <button id="boton-carrito" class="encabezado__carrito" type="button" aria-label="Abrir carrito" aria-controls="menu-carrito" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M15 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
                     <span id="cantidad-carrito" class="encabezado__carrito__cantidad carrito-toggle">0</span>
-                    
-                    <div id="menu-carrito" class="encabezado__carrito__contenedor carrito-toggle">
-                        <div class="encabezado__carrito__descripcion">
-                            <h3>Tu Carrito Esta Vacio</h3>
-                            <p>Agrega Productos</p>
-                        </div>
-
-                        <table class="encabezado__carrito__lista">
-                            <tbody id="lista-carrito">
-                                <!-- Lista Carrito -->
-                            </tbody>
-                        </table>
-
-                        <div class="encabezado__carrito__resumen">
-                            <div>
-                                <p id="resumen-carrito" class="carrito-toggle">Total: $ 0</p>
-                            </div>
-                        </div>
-
-                        <div class="encabezado__carrito__botones">
-                            <div>
-                                <a id="pagar-carrito">Pagar</a>
-                            </div>
-
-                            <div>
-                                <a id="limpiar-carrito">Limpiar</a>
-                            </div>
-                        </div>
-                    </div>
                 </button>
+
+                <div id="fondo-carrito" class="encabezado__carrito__fondo carrito-toggle" aria-hidden="true"></div>
+
+                <aside id="menu-carrito" class="encabezado__carrito__contenedor carrito-toggle" aria-labelledby="titulo-carrito" aria-hidden="true">
+                    <div class="encabezado__carrito__cabecera">
+                        <h2 id="titulo-carrito">Tu carrito</h2>
+                        <button id="cerrar-carrito" type="button" aria-label="Cerrar carrito">×</button>
+                    </div>
+
+                    <div class="encabezado__carrito__descripcion">
+                        <h3>Tu carrito está vacío</h3>
+                        <p>Agregá productos para comenzar</p>
+                    </div>
+
+                    <table class="encabezado__carrito__lista">
+                        <tbody id="lista-carrito">
+                            <!-- Lista Carrito -->
+                        </tbody>
+                    </table>
+
+                    <div class="encabezado__carrito__resumen">
+                        <p id="resumen-carrito" class="carrito-toggle">Total: $ 0</p>
+                    </div>
+
+                    <div class="encabezado__carrito__botones">
+                        <button id="pagar-carrito" type="button">Pagar</button>
+                        <button id="limpiar-carrito" type="button">Limpiar</button>
+                    </div>
+                </aside>
             </nav>
         </div>
     </header>
